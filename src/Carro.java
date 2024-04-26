@@ -36,20 +36,20 @@ public class Carro {
         this.ano = ano;
     }
 
-    public double getKilometragem() {
-        return kilometragem;
+    public float getKilometragem() {
+        return (float) kilometragem;
     }
 
-    public void setKilometragem(double kilometragem) {
+    public void setKilometragem(float kilometragem) {
         this.kilometragem = kilometragem;
     }
 
     @Override
     public String toString() {
-        return "Carro{" +
-                "modelo='" + modelo + '\'' +
-                ", placa='" + placa + '\'' +
-                ", ano=" + ano +
-                ", kilometragem=" + kilometragem + '}';
+        return "Carro " +
+                "modelo = " + modelo + 
+                ", placa = " + placa + 
+                ", ano = " + ano +
+                ", kilometragem = " + kilometragem;
     }
 }
