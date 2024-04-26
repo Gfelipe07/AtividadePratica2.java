@@ -23,7 +23,7 @@ public class Sistema {
                 int ano = Console.lerInt();
 
                 System.out.print("Kilometragem: ");
-                double kilometragem = Console.lerDouble();
+                float kilometragem = Console.lerFloat();
 
                 Carro carro = new Carro(modelo, placa, ano, kilometragem);
 
@@ -36,7 +36,7 @@ public class Sistema {
                 System.out.println("\nTodos os carros cadastrados:");
 
                 if (Cadastro.getListaCarros().size() == 0) {
-                    System.out.println("\nNão há carros cadastrados...");
+                    System.out.println("\nNão há carros cadastrados");
                     return;
                 }
 
@@ -55,16 +55,16 @@ public class Sistema {
                     Cadastro.remover(carroDeletar);
                     System.out.println("\nCarro deletado com sucesso!");
                 } else {
-                    System.out.println("\nCarro não encontrado.");
+                    System.out.println("\nCarro não encontrado!");
                 }
                 break;
 
             case 0:
-                System.out.println("\nO programa foi finalizado...");
+                System.out.println("\nO programa foi finalizado");
                 break;
 
             default:
-                System.out.println("\nOpção inválida. Digite novamente.");
+                System.out.println("\nOpção inválida. Digite novamente");
                 break;
         }
     }
