@@ -21,7 +21,7 @@ public class Cadastro {
         }
         return null;
     }
-
+    
     public static void remover(Carro carro) {
         listaCarros.remove(carro);
     }
